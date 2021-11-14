@@ -1,18 +1,22 @@
-arr_n = Array.new 
+arr_numbers = Array.new 
 puts "nhap -1 de ngung "
-while arr_n.length < 100 do
+while arr_numbers.length < 100 do
     begin 
         puts "nhap so phan tu: "  
-        n = Integer(gets)
-        if n == -1 then break          
-        elsif n >= 0 then arr_n.push(n)         
-        else puts "nhap so phan tu: "    
-            
-        end
+        number = Integer(gets)
+    rescue     
+        puts "Vui long nhap so!" 
+        retry
     end 
+    if number == -1 
+         break          
+    elsif number >= 0
+         arr_numbers.push(number)         
+    else 
+        puts "nhap so phan tu: "          
+    end
 
 end
-arr_numbers = arr_n.sort
-min = arr_numbers[0]
+array_min = arr_numbers.min
 puts "mang n: #{arr_numbers}"
-puts "so nho nhat trong mang la #{min}"
+puts "so nho nhat trong mang la #{array_min}"

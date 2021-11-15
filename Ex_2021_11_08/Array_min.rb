@@ -16,8 +16,8 @@ while arr_numbers.length < 100 do
     else 
         puts "Vui long nhap so lon hon 0!"          
     end
-
 end
 array_min = arr_numbers.min
 puts "Day so nguyen la: #{arr_numbers}"
 puts "so nho nhat trong mang la #{array_min}"
+

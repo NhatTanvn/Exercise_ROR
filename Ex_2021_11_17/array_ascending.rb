@@ -37,6 +37,7 @@ for i in 0..LENGHT
             puts ""
         end      
         i += 1
-        count += 1        
+        count += 1
+        break if array_numbers[i].nil?
     end
 end

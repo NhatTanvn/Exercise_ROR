@@ -3,7 +3,7 @@ RAND_START = 1
 RAND_END = 9
 random_numbers = 0
 array_numbers = Array.new
-count = 0 
+count = 1
 
 while true do         
     begin
@@ -26,18 +26,20 @@ end
 puts "Day so la: #{array_numbers}"
 LENGHT = array_numbers.length
 
-for i in 0..LENGHT
-    while array_numbers[i] <= array_numbers[i + 1] do
-        puts "mang con tang #{count}"
-        if count == 0 
-            print "#{array_numbers[i]} , #{array_numbers[i+1]}"
-            puts ""
+for i in 0..LENGHT-1
+    j = i + 1   
+    tmp = array_numbers[i]
+        puts "mang con tang #{count}: "
+    for j in 0..LENGHT
+        if tmp <= (array_numbers[j])
+            tmp = array_numbers[j]
+            print "#{tmp} "
         else
-            print array_numbers[i + 1] 
-            puts ""
-        end      
-        i += 1
-        count += 1
-        break if array_numbers[i].nil?
+            break
+        end
     end
+    count+= 1
+    i==j
+    break if array_numbers.size - 1 == count
+    puts ""
 end

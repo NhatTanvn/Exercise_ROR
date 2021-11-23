@@ -40,3 +40,9 @@ for i in 0..LENGHT
         break if array_numbers[i].nil?
     end
 end
+# Code e viết gọn, dễ đọc, có sử dụng hằng là một điểm cộng 
+# Anh có vài góp ý nhỏ:
+# 1. LENGHT = array_numbers.length -> chổ này e nên khai báo là biến bình thường, kg nên là hằng số
+# 2. Em có thể xem xét tách ra hàm để dễ xử lý
+# 3. count == 0 -> e có thể viết là count.zero?
+# 4. numbers = 0 -> a vẫn chưa rõ dụng ý e đặt biến number có s

@@ -18,3 +18,4 @@ while i < j
     end
    
 end
+# Giải thuật của e mới lạ, không sử dụng include? là một điểm cộng

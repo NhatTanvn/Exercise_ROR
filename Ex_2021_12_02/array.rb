@@ -6,7 +6,7 @@
         while right > left 
             sum = numbers[left] + numbers[right] + numbers[i]
           if sum - target_sum == 0 
-            puts "sum: #{numbers[right]}, #{numbers[left]}, #{numbers[i]}"
+            sum_array.push("[#{numbers[right]},#{numbers[left]},#{numbers[i]}]")
               left+=1
               right-=1
               i+=1
@@ -20,6 +20,7 @@
   end
   numbers = [12, 3, 1, 2, -6, 5, -8, 6]
   target_sum = 0
+  sum_array = []
 find_sum(numbers, target_sum)
 
 #chỉ tìm được 3 số: [-8, 3, 5]

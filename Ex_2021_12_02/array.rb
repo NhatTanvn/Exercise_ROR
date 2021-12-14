@@ -6,7 +6,7 @@
        while right > left 
            sum = numbers[right] + numbers[left] + numbers[i]
          if sum - target_sum == 0 
-           sum_array.push("[#{numbers[right]},#{numbers[right]},#{numbers[right]}]")
+           sum_array.push("[#{numbers[right]},#{numbers[left]},#{numbers[i]}]")
              left = left + 1
              right = right -1
              i+=1
